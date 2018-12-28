@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>博客管理系统</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        
+        <div class="row header">
+                <div class="col-9">
+                    <nav class="nav navbar-expand-lg ">
+                        <div class="py-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="d-block mx-auto">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="14.31" y1="8" x2="20.05" y2="17.94"></line>
+                                <line x1="9.69" y1="8" x2="21.17" y2="8"></line>
+                                <line x1="7.38" y1="12" x2="13.12" y2="2.06"></line>
+                                <line x1="9.69" y1="16" x2="3.95" y2="6.06"></line>
+                                <line x1="14.31" y1="16" x2="2.83" y2="16"></line>
+                                <line x1="16.62" y1="12" x2="10.88" y2="21.94"></line>
+                            </svg>
+                        </div>
+                        <h2 class="navbar-brand">博客后台管理</h2>
+                    </nav>
+                </div>
+                <div class="col-3 time-box">
+                    <p id="time">时间</p>
+                </div>
+        </div>
+        <div class="row">
+	          <marquee>厚德、博学、求实、创新</marquee>
+	     </div>
+        <div class="row">
+        	
+            <div class="container main">
+	            
+                <div class="row">
+                    <div class="col-3">
+                        <ul class="nav-link nav" id="ul-list">
+                            <li class="list-group-item list-group-item-action" value="1">热门</li>
+                            <li class="list-group-item list-group-item-action" value="2">娱乐</li>
+                            <li class="list-group-item list-group-item-action" value="3">科技</li>
+                            <li class="list-group-item list-group-item-action" value="4">历史</li>
+                            <li class="list-group-item list-group-item-action" value="5">军事</li>
+                            <li class="list-group-item list-group-item-action" value="6">电影</li>
+                            <li class="list-group-item list-group-item-action" value="7">体育</li>
+                        </ul>
+                    </div>
+                    <div class="col-9">
+                        <div class="row add-btn">
+                            <button type="button" class="btn btn-primary" id="add-btn">增加</button>
+                        </div>
+                        <div class="row">
+                            <table class="table table-hover text-center">
+                                <thead>
+                                    <tr>
+                                        <th scope="col-1">编号</th>
+                                        <th scope="col-1">标题</th>
+                                        <th scope="col-1">类别</th>
+                                        <th scope="col-3">内容</th>
+                                        <th scope="col-1">发布时间</th>
+                                        <th scope="col-1">状态</th>
+                                        <th scope="col-1">点击量</th>
+                                        <th scope="col-1">点赞数</th>
+                                        <th scope="col-1">操作</th>
+                                        <th scope="col-1">操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tbody">
+                                    <tr>
+                                        <td>1</td>
+                                        <td>hello</td>
+                                        <td>军事</td>
+                                        <td>hello world</td>
+                                        <td>2018-12-27</td>
+                                        <td>已发布</td>
+                                        <td>20</td>
+                                        <td>20</td>
+                                        <td><button type="button" class="btn btn-primary">修改</button></td>
+                                        <td><button type="button" class="btn btn-danger">删除</button></td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row footer">
+            <p>16计科二班第八组  版权 所属</p>
+        </div>
+    </div>
+    <script src="./scripts/main.js"></script>
+</body>
+
+</html>

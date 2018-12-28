@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="AddBlog" method="POST">
+			<input type="text" readonly id="bid">
+      		<input type="text" name="title" placeholder="请输入博客标题">
+      		<br>
+      		<select name="blogType">
+      			<option value="1">热门</option>
+				<option value="2">娱乐</option>
+				<option value="3">科技</option>
+				<option value="4">历史</option>
+				<option value="5">军事</option>
+				<option value="6">电影</option>
+				<option value="7">体育</option>
+      		</select>
+      		<br>
+      		<textarea rows="2" cols="30" name="content"></textarea>
+      		<input type="submit" value="提交">
+      	</form>
+      	
+      	<script type="text/javascript">
+      		window.onload = function(){
+      			console.log(location.search);
+      			var search = location.search;
+      			var str = search.split("?")[1];
+      			console.log(str);
+      			var array = str.split("&");
+      			console.log(array);
+      			
+      			document.querySelector('[name="title"]').value = array[0].split("=")[1];
+      			document.querySelector("select").selectedIndex = array[1].split("=")[1];
+      			document.querySelector('[name="content"]').value = array[2].split("=")[1];
+      			document.querySelector('#bid').value = array[3].split("=")[1];
+      		}
+      	</script>
+</body>
+</html>

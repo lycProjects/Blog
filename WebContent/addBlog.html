@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>博客管理系统</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/addBlog.css">
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <marquee>厚德、博学、求实、创新</marquee>
+        </div>
+        <div class="row header">
+            <div class="col-9">
+                <nav class="nav navbar-expand-lg ">
+                    <div class="py-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mx-auto">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="14.31" y1="8" x2="20.05" y2="17.94"></line>
+                            <line x1="9.69" y1="8" x2="21.17" y2="8"></line>
+                            <line x1="7.38" y1="12" x2="13.12" y2="2.06"></line>
+                            <line x1="9.69" y1="16" x2="3.95" y2="6.06"></line>
+                            <line x1="14.31" y1="16" x2="2.83" y2="16"></line>
+                            <line x1="16.62" y1="12" x2="10.88" y2="21.94"></line>
+                        </svg>
+                    </div>
+                    <h2 class="navbar-brand">博客后台管理</h2>
+                </nav>
+            </div>
+            <div class="col-3 time-box">
+            </div>
+        </div>
+        <div class="row">
+            <div class="container main addBlog-main">
+                 <form>
+                    <div class="add-book_title">
+                        <h5 id='add_title'>添加博客</h5>
+                    </div>
+                    <div class="well">
+                            <div class="form-group">
+                                <label for="">标题</label>
+                                <input type="text" class="form-control " id="title">
+                            </div>
+                            <div class="form-group">
+                                <label for="">类型</label>
+                                <select class="form-control" id="tag">
+                                    <option value="1">热门</option>
+                                    <option value="2">娱乐</option>
+                                    <option value="3">科技</option>
+                                    <option value="4">历史</option>
+                                    <option value="5">军事</option>
+                                    <option value="6">电影</option>
+                                    <option value="7">体育</option>
+
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="">状态</label>
+                                <select class="form-control" id="status" >
+                                    <option value="1">待发布</option>
+                                    <option value="2">待审核</option>
+                                    <option value="3">已发布</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="">内容</label>
+                                <textarea type="text" class="form-control" rows="6" id='content'></textarea>
+                            </div>
+                            <div class="form-group add-book_btn">
+                                <button type="button" class="btn btn-primary" id="btn">提交</button>
+                            </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row footer">
+            <p>16计科二班第八组 版权 所属</p>
+        </div>
+    </div>
+    <!-- <script src="../scripts/main.js"></script> -->
+    <script src="./scripts/addBlog.js"></script>
+</body>
+
+</html>
